@@ -57,6 +57,7 @@
     }
 
     async function scanCode() {
+      alert("Open scan code")
       const result = await liff.scanCode()
       document.getElementById("scanCode").append(result.value)
     }
